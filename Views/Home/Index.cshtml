@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <a href='@Url.Action("Facebook", "Home")'> 
+            <img src='@Url.Content("https://blog.dashlane.com/wp-content/uploads/2018/03/facebook-sign-in-button.png")' width="220" height="100"/> </a>
+
+        <p>Name: @TempData["name"]</p>
+        <p>Picture: <img src="@TempData["picture"] "/></p>
+    </div>
+</div>
